@@ -2,7 +2,7 @@
 
 ## Problem Statement:
 
-A daily file having data on airplane flights is forwarded by upstream team by uploading it to a S3 bucket. Data on airports between which these flights takes place is already present on the database. An automated system needs to be developed which enriches the flight data with data on airports, filters the records based on business logic and stores it in on an OLAP style database in a de-normalized form. Furthermore, the data needs to be analysed.
+A daily file having data on airplane flights is forwarded by upstream team by uploading it to a S3 bucket. Data on airports between which these flights takes place is already present on the database. An automated system needs to be developed which enriches the flight data with data on airports, filters the records based on business logic and stores it on an OLAP style database in a de-normalized form. Furthermore, the data needs to be analysed.
 
 Business logic dictates that data on flights whose departure has been delayed by more than an hour are only needed to be stored.
 
