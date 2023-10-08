@@ -1,0 +1,35 @@
+-- truncate "dev"."airlines"."daily_flights_fact";
+
+-- Sample of data
+SELECT
+    *
+FROM
+    "dev"."airlines"."daily_flights_fact" limit 10;
+
+-- Number of records
+select count(*) FROM
+    "dev"."airlines"."daily_flights_fact";
+
+-- Airplane routes
+select dep_airport,arr_airport from "dev"."airlines"."daily_flights_fact" group by dep_airport,arr_airport;
+
+-- Top 10 airplane routes with most number of delayed flights
+select dep_airport,arr_airport,count(*) from "dev"."airlines"."daily_flights_fact" group by dep_airport,arr_airport order by count(*) desc limit 10;
+
+-- Top 10 airpolane traffic routes with most number of delayed flights in terms of city
+select dep_city,arr_city,count(*) from "dev"."airlines"."daily_flights_fact" group by dep_city,arr_city order by count(*) desc limit 10;
+
+-- Airports arranged in decreasing order of departure delay
+select dep_airport, avg(dep_delay), stddev(dep_delay) from "dev"."airlines"."daily_flights_fact" group by dep_airport order by avg(dep_delay) desc,stddev(dep_delay) desc;
+
+-- Airports arranged in decreasing order of arrival delay
+select arr_airport, avg(arr_delay), stddev(arr_delay) from "dev"."airlines"."daily_flights_fact" group by arr_airport order by avg(arr_delay) desc,stddev(arr_delay) desc;
+
+-- Carriers which are most used
+select carrier,count(*) from "dev"."airlines"."daily_flights_fact" group by carrier order by count(*) desc limit 10;
+
+-- Carriers causing most departure delay
+select carrier, avg(dep_delay) from "dev"."airlines"."daily_flights_fact" group by carrier order by avg(dep_delay) desc limit 10;
+
+-- Carriers causing most arrival delay
+select carrier, avg(arr_delay) from "dev"."airlines"."daily_flights_fact" group by carrier order by avg(arr_delay) desc limit 10;
