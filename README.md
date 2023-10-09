@@ -19,8 +19,7 @@ Here choice 1 is based on whether crawler is running or run is successfull. Choi
 ## Analysis of dataset:
 
 
-### The enriched dataset takes the following form - 
-
+#### The enriched dataset takes the following form - 
 
 carrier	dep_airport	arr_airport	dep_city	arr_city	dep_state	arr_state	dep_delay	arr_delay
 
@@ -46,15 +45,14 @@ AA	Chicago O'Hare International	Lambert-St. Louis International	Chicago	St. Loui
 
 
 
-### Out of 100,000 records, 66,863 records were filtered to be in the dataset - 
+#### Out of 100,000 records, 66,863 records were filtered to be in the dataset - 
 
 count
 
 66863	
 
 
-### Top 10 airplane routes with most number of delayed flights and the flight count
-
+#### Top 10 airplane routes with most number of delayed flights and the flight count - 
 
 dep_airport	arr_airport	count
 
@@ -79,8 +77,7 @@ Chicago O'Hare International	Hartsfield-Jackson Atlanta International	226
 McCarran International	San Francisco International	224	
 
 
-### Top 10 airpolane traffic routes with most number of delayed flights in terms of city
-
+#### Top 10 airpolane traffic routes with most number of delayed flights in terms of city -
 
 dep_city	arr_city	count
 
@@ -105,7 +102,7 @@ Chicago	Atlanta	279
 Dallas/Fort Worth	Chicago	272	
 
 
-### Top airports arranged in decreasing order of departure delay
+#### Top airports arranged in decreasing order of departure delay -
 
 dep_airport	avg	stddev
 
@@ -130,7 +127,7 @@ Buffalo Niagara International	136	96.76686325490726
 Norfolk International	135	104.86653969686645	
 
 
-### Top airports arranged in decreasing order of arrival delay
+#### Top airports arranged in decreasing order of arrival delay - 
 
 arr_airport	avg	stddev
 
@@ -155,7 +152,7 @@ George Bush Intercontinental/Houston	126	80.78182227794103
 John F. Kennedy International	125	77.10202587493136	
 
 
-### Carriers which are most used
+#### Carriers which are most used -
 
 carrier	count
 
@@ -180,7 +177,7 @@ OO	4235
 9E	3040	
 
 
-### Carriers causing most departure delay
+#### Carriers causing most departure delay -
 
 carrier	avg
 
@@ -205,7 +202,7 @@ B6	121
 EV	120	
 
 
-### Carriers causing most arrival delay
+#### Carriers causing most arrival delay -
 
 carrier	avg
 
