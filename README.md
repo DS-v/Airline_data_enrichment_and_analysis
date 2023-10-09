@@ -18,7 +18,9 @@ Here choice 1 is based on whether crawler is running or run is successfull. Choi
 
 ## Analysis of dataset:
 
-=> The enriched dataset takes the following form - 
+
+### The enriched dataset takes the following form - 
+
 
 carrier	dep_airport	arr_airport	dep_city	arr_city	dep_state	arr_state	dep_delay	arr_delay
 
@@ -43,13 +45,16 @@ AA	Chicago O'Hare International	Lambert-St. Louis International	Chicago	St. Loui
 AA	Chicago O'Hare International	Lambert-St. Louis International	Chicago	St. Louis	IL	MO	74	73	
 
 
-=> Out of 100,000 records, 66,863 records were filtered to be in the dataset - 
+
+### Out of 100,000 records, 66,863 records were filtered to be in the dataset - 
 
 count
 
 66863	
 
-=> Top 10 airplane routes with most number of delayed flights and the flight count
+
+### Top 10 airplane routes with most number of delayed flights and the flight count
+
 
 dep_airport	arr_airport	count
 
@@ -146,7 +151,7 @@ George Bush Intercontinental/Houston	126	80.78182227794103
 John F. Kennedy International	125	77.10202587493136	
 
 
-=> Carriers which are most used
+### Carriers which are most used
 
 carrier	count
 
@@ -171,7 +176,7 @@ OO	4235
 9E	3040	
 
 
-=> Carriers causing most departure delay
+### Carriers causing most departure delay
 
 carrier	avg
 
@@ -196,7 +201,7 @@ B6	121
 EV	120	
 
 
-=> Carriers causing most arrival delay
+### Carriers causing most arrival delay
 
 carrier	avg
 
