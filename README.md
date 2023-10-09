@@ -78,7 +78,9 @@ Chicago O'Hare International	Hartsfield-Jackson Atlanta International	226
 
 McCarran International	San Francisco International	224	
 
-=> Top 10 airpolane traffic routes with most number of delayed flights in terms of city
+
+### Top 10 airpolane traffic routes with most number of delayed flights in terms of city
+
 
 dep_city	arr_city	count
 
@@ -102,7 +104,8 @@ Chicago	Atlanta	279
 
 Dallas/Fort Worth	Chicago	272	
 
-=> Top airports arranged in decreasing order of departure delay
+
+### Top airports arranged in decreasing order of departure delay
 
 dep_airport	avg	stddev
 
@@ -126,7 +129,8 @@ Buffalo Niagara International	136	96.76686325490726
 
 Norfolk International	135	104.86653969686645	
 
-=> Top airports arranged in decreasing order of arrival delay
+
+### Top airports arranged in decreasing order of arrival delay
 
 arr_airport	avg	stddev
 
